@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Post</title>
+
+</head>
+<style>
+    div.main{
+        text-align: center;
+        margin-top: 3rem;
+    }
+    input{
+        margin: 1rem;
+        padding: .5rem;
+    }
+</style>
+<body>
+    <div class="main">
+        <form action="/users" method="POST">
+          <div >
+            <input type="text" name="name" id="name" placeholder="name" required>
+          </div>
+          <div>
+            <input type="email" name="email" id="email" placeholder="email" required>
+          </div>
+          <div>
+            <input type="text" name="username" id="username" placeholder="username" required>
+          </div>
+          <button type="submit">post</button>
+        </form>
+    </div>
+</body>
+</html>
